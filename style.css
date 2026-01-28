@@ -1,0 +1,108 @@
+body {
+    background-color: #121212; /* Koyu tema */
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card {
+    background: #1e1e1e;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    width: 300px;
+}
+
+img {
+    border-radius: 50%;
+    border: 3px solid #00ff88;
+}
+
+.links {
+    margin-top: 20px;
+}
+
+.btn {
+    display: block;
+    background: #00ff88;
+    color: #121212;
+    padding: 10px;
+    margin: 10px 0;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+#muzikBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 1px solid white;
+    border-radius: 50px;
+    cursor: pointer;
+    backdrop-filter: blur(5px);
+    z-index: 1000;
+}
+
+#muzikBtn:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+}
+
+.btn:hover {
+    background: #00cc6e;
+    transform: scale(1.05);
+}
+body {
+    /* Buraya kendi resminin adını yaz (Örn: arka-plan.jpg) */
+    background-image: url('arkaplan.jpg'); 
+    
+    /* Resmin ekranı tam kaplaması için ayarlar: */
+    background-size: cover;       /* Resmi ekrana yayar */
+    background-position: center;  /* Resmi ortalar */
+    background-attachment: fixed; /* Sayfa kayınca arka plan sabit kalır */
+    background-repeat: no-repeat; /* Resmin tekrar etmesini engeller */
+    
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+}
+.audio-container {
+    margin-top: 20px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.audio-container p {
+    font-size: 12px;
+    margin-bottom: 5px;
+    color: #ccc;
+}
+
+audio {
+    height: 30px; /* Daha ince ve zarif durması için */
+    filter: invert(100%) hue-rotate(180deg) brightness(1.5); /* Koyu temaya uydurmak için renkleri ters çevirir */
+}
+.cursor-glow {
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(0, 255, 136, 0.15) 0%, rgba(0, 0, 0, 0) 70%);
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none; /* Fareyle butona basmanı engellemez */
+    transform: translate(-50%, -50%);
+    z-index: 0; /* Kartın arkasında kalması için */
+    transition: width 0.3s, height 0.3s;
+}

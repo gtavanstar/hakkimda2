@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Hakkımda - Hamza Duran</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cursor-glow"></div>
+    <div class="card">
+        <img src="profil.jpg" alt="Profil Fotoğrafı">
+        <h1>Selam, Ben Hamza Duran!</h1>
+        <p>Geleceğin Yazılımcısı</p>
+        <p>İletişim : DM - 5416701550</p>
+        
+        <div class="links">
+            <a href="https://www.instagram.com/hmzdrn41/" class="btn">Instagram</a>
+            <a href="https://github.com/gtavanstar" class="btn">GitHub</a>
+            <a href="https://wa.me/905416701550?text=Merhaba,%20Hamza%20Duran%20ile%20mi%20görüşüyorum?" class="btn whatsapp-btn">WhatsApp'tan Yaz</a>
+        </div>
+
+        <div class="audio-container">
+            <p>Müzik : KAVAK - İZLER KALIRSIN</p>
+            <audio id="arkaPlanMuzik" loop controls>
+                <source src="muzik.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+    </div>
+
+    <script>
+// Klavye kısayollarını engelle (F12, Ctrl+Shift+I, Ctrl+U, Ctrl+S)
+document.onkeydown = function(e) {
+    if (e.keyCode == 123) { // F12
+        alert("Lan salak enayi basit siteyi kopyalamayamı çalışıyon en kolay site zaten");
+        return false;
+    }
+    if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) { // Ctrl+Shift+I
+        alert("ne diyim kaynak kodlarına hoş geldiniz mi diyem.");
+        return false;
+    }
+    if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) { // Ctrl+Shift+J
+        alert("siteyi githubda yayınladım spam ata ata githubı çöktürcen.");
+        return false;
+    }
+    if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) { // Ctrl+U
+        alert("tek akıllı sensin demi.");
+        return false;
+    }
+    if ((e.ctrlKey || e.metaKey) && e.keyCode == 83) { // Ctrl+S
+        e.preventDefault();
+        alert("aynen enayi rüyanda kopyalarsın siteyi");
+        return false;
+    }
+};
+const glow = document.querySelector('.cursor-glow');
+
+document.addEventListener('mousemove', (e) => {
+    glow.style.left = e.clientX + 'px';
+    glow.style.top = e.clientY + 'px';
+});
+
+// Sağ tık engeli
+document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+    alert("bu nasıl ülke harbi diyorum en basit şeyide kopyalıyonuz");
+});
+    </script>
+</body>
+</html>
